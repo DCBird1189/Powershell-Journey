@@ -11,7 +11,41 @@
 ### Weekly Milestones
 | Week | Focus | Status |
 |------|--------|--------|
+| 01 | Console Kung-Fu + PowerShell Profile | To add the checkmark ✅ in your Roadmap.md file, follow these steps:
+1. Open the File
+- Navigate to your powershell-journey repository.
+- Open Roadmap.md in VS Code, Notepad++, or any markdown editor.
+2. Locate the Weekly Milestones Section
+Find the table that lists your project progress. It should look like this:
+| Week | Focus | Status |
+|------|--------|--------|
 | 01 | Console Kung-Fu + PowerShell Profile | ☐ In Progress |
+| 02 | Functions & Comment-Based Help | ☐ In Progress |
+
+
+3. Replace the Checkbox Symbol
+To mark Week 1 as completed, replace ☐ with ✅:
+| Week | Focus | Status |
+|------|--------|--------|
+| 01 | Console Kung-Fu + PowerShell Profile | ✅ Completed |
+| 02 | Functions & Comment-Based Help | ☐ In Progress |
+
+
+4. Save the File
+- Click File > Save or press CTRL + S.
+5. Commit & Push the Update to GitHub
+Open PowerShell/Git Bash and run:
+git add Roadmap.md
+git commit -m "Marked Week 1 as complete"
+git push origin main
+
+
+6. Verify on GitHub
+- Go to your GitHub repository.
+- Open Roadmap.md online and confirm the ✅ appears.
+Once it’s updated, you’re officially tracking your first completed milestone. Keep the momentum going! 🚀
+Let me know when it’s done, and we’ll get rolling on Week 2: Functions & Comment-Based Help.
+ In Progress |
 | 02 | Functions & Comment-Based Help | ☐ In Progress |
 | 03 | Remoting & Inventory Scripts | ☐ In Progress |
 | 04 | Basic Module Creation | ☐ In Progress |
