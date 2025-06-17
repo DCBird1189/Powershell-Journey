@@ -1,0 +1,19 @@
+name: Progress Badge
+on:
+  push:
+    paths: ["**/*.ps1", "journal/**"]
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Count commits and update README
+        run: |
+          pwsh -Command "
+            \$commits = (git rev-list --count HEAD)
+            (Get-Content README.md) -replace 'Commits: \d+', 'Commits: $commits' |
+            Set-Content README.md
+          "
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'chore: update progress badge'
